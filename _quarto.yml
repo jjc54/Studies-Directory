@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "AREF Studies Directory"
+  navbar:
+    background: primary
+    search: TRUE
+    left:
+      - href: index.qmd
+        text: "Home"
+      - Studies.qmd
+      - Contact.qmd
+  sidebar: 
+    style: "docked"
+    search: "true"
+    contents: 
+      - section: "Knee"
+      contents: 
+      -BioACL2.0.qmd
+      -Return to Sport.qmd
+      - section: "Shoulder"
+      contents: 
+      -RC Comp.qmd
+      -Mitek.qmd
+      -AdCap.qmd
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: TRUE
+
+editor: visual
+
